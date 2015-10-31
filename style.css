@@ -1,0 +1,117 @@
+/*
+Template:twentyfourteen
+Theme Name:twentyfourteen_child
+Theme URI:http://●●●.com/
+Description:twentyfourteen の子テーマです
+Author:Ogawa Daiki
+Version:1.0
+*/
+
+/*下部固定バー*/
+#float_menu{
+    position: fixed;
+    bottom: 0px;
+    /*top:300px;*/
+    /*margin-top:300px;*/
+
+    z-index: 10;
+    background-color: black;
+    opacity: 0.9;
+    width: 100%;
+    height:50px;
+}
+
+#float_menu_list{
+  margin: 0 auto;
+}
+
+/*人気記事ランキングページ*/
+
+
+/*人気記事ランキング*/
+#wpp-2 {
+    counter-reset: wpp-2;
+}
+
+#wpp-2 ul li:before {
+		position:absolute;
+		left:10px;
+    color:#FFF;
+    content: counter(wpp-2, decimal);
+    counter-increment: wpp-2;
+    text-align:center;
+    opacity:0.999;
+    float:left;
+    line-height:30px;
+    width: 30px;
+    height: 30px;
+    background-color:#3E454C;
+		opacity: 0.8;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+.pp-in-page{
+    counter-reset: wpp-2;
+}
+
+.pp-in-page ul li:before {
+		position:absolute;
+		left:10px;
+    color:#FFF;
+    content: counter(wpp-2, decimal);
+    counter-increment: wpp-2;
+    text-align:center;
+    opacity:0.999;
+    float:left;
+    line-height:30px;
+    width: 30px;
+    height: 30px;
+    background-color:#3E454C;
+		opacity: 0.8;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+/*スライダー*/
+#advps_container2{
+  max-height: 130px;
+}
+
+
+/*ライターページ*/
+.writers{
+    overflow:hidden;
+		width: 85%;
+		margin: 0 auto;
+}
+.writer-profile{
+    width: 40%;
+    min-height: 150px;
+    /*margin:1%;*/
+		display: inline;
+		font-size: 22px;
+}
+.writer-profile img{
+	/*border-radius: 300px;*/
+	width: 100%;
+	height: 100%;
+}
+
+.writer-profile .name{
+    text-align:center;
+    font-weight:bold;
+    padding:10px 0;
+    margin:0;
+		font-size: 23px;
+}
+.writer-profile .description{
+    font-size:0.8em;
+}
+.writer-profile .button a{
+    font-size:0.8em;
+}
+.writer-profile .button a:after{
+    content:' >';
+}
+/*ライターページ*/
